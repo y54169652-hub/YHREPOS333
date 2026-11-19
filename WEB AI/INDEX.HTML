@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الذكاء الاصطناعي في حياتنا اليومية | يوسف حسام</title>
+    
+    <!-- خط القاهرة الرسمي -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- أيقونة الموقع (Favicon) بحرف Y والنجمتين -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Cairo, sans-serif' font-weight='bold' font-size='42' fill='%23f1f3f5'>Y</text><text x='35%' y='18%' font-size='16' fill='%23ffd43b'>★</text><text x='60%' y='18%' font-size='16' fill='%23ffd43b'>★</text></svg>">
+    
+    <!-- ربط ملف التنسيق الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header class="glass-nav">
+        <div class="container nav-content">
+            <div class="logo">AI<span>.</span>LIFE</div>
+            <nav>
+                <a href="#about">فكرة المشروع</a>
+                <a href="#uses">الاستخدامات</a>
+                <a href="#interactive">التجربة التفاعلية</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero) -->
+    <section id="about" class="hero-section container">
+        <div class="glass-card hero-card">
+            <span class="badge">تطوير وبحث: يوسف حسام</span>
+            <h1>توظيف الذكاء الاصطناعي في الحياة العملية</h1>
+            <p>
+                لم يعد الذكاء الاصطناعي مجرد تقنية مستقبلية، بل أصبح أداة يومية أساسية لمضاعفة الإنتاجية، 
+                تنظيم الوقت، تحليل البيانات، واتخاذ قرارات أكثر دقة في العمل والدراسة.
+            </p>
+            <div class="hero-actions">
+                <a href="#interactive" class="btn-primary">ابدأ التجربة الحية</a>
+                <a href="#uses" class="btn-secondary">استكشف المجالات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- مجالات الاستخدام -->
+    <section id="uses" class="container section-padding">
+        <h2 class="section-title">كيف نستخدم الذكاء الاصطناعي يومياً؟</h2>
+        <div class="grid-cards">
+            <div class="glass-card feature-card">
+                <div class="card-number">01</div>
+                <h3>إدارة الوقت والإنتاجية</h3>
+                <p>أتمتة المهام المتكررة، تلخيص الاجتماعات الطويلة، وتنظيم الجداول اليومية بذكاء ودقة.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <div class="card-number">02</div>
+                <h3>التعلم والبحث العلمي</h3>
+                <p>تبسيط المفاهيم المعقدة، ترجمة الأبحاث، وبناء خطط دراسية مخصصة تناسب مستوى كل شخص.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <div class="card-number">03</div>
+                <h3>البرمجة وتطوير الأعمال</h3>
+                <p>كتابة الأكواد ومراجعتها، تحليل الأسواق، وصياغة الخطط الاستراتيجية للشركات الناشئة.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <div class="card-number">04</div>
+                <h3>صناعة المحتوى والتحليل</h3>
+                <p>صياغة التقارير الاحترافية، تدقيق النصوص، واستخراج النتائج المهمة من البيانات الضخمة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التجربة التفاعلية الحقيقية -->
+    <section id="interactive" class="container section-padding">
+        <h2 class="section-title">التجربة التفاعلية المباشرة</h2>
+        <p class="section-subtitle">تحدث مباشرة مع النظام الذكي واسأله عن أي طريقة لتطبيق الذكاء الاصطناعي في مجالك.</p>
+        
+        <div class="glass-card chat-container">
+            <!-- شريط حالة الاتصال -->
+            <div class="chat-header">
+                <div class="status-indicator">
+                    <span class="dot"></span>
+                    <span>النظام متصل وجاهز للرد</span>
+                </div>
+                <button id="clear-chat" class="btn-text">مسح المحادثة</button>
+            </div>
+
+            <!-- منطقة عرض الرسائل -->
+            <div id="chat-box" class="chat-box">
+                <div class="message bot-message">
+                    أهلاً بك. أنا جاهز لمساعدتك في اكتشاف كيف يمكن للذكاء الاصطناعي تسهيل عملك أو دراستك اليومية. ما هو مجالك أو سؤالك؟
+                </div>
+            </div>
+
+            <!-- أسئلة سريعة للتجربة -->
+            <div class="quick-prompts">
+                <button class="prompt-chip" data-prompt="كيف أستخدم الذكاء الاصطناعي لتنظيم وقتي في الدراسة؟">تنظيم وقت الدراسة</button>
+                <button class="prompt-chip" data-prompt="أعطني 3 أدوات ذكاء اصطناعي تفيد في العمل المكتبي">أدوات للعمل المكتبي</button>
+                <button class="prompt-chip" data-prompt="كيف يساعد الذكاء الاصطناعي المبرمجين يومياً؟">تطبيقات في البرمجة</button>
+            </div>
+
+            <!-- شريط الإدخال -->
+            <form id="chat-form" class="chat-input-area">
+                <input type="text" id="user-input" placeholder="اكتب سؤالك هنا واضغط إرسال..." required autocomplete="off">
+                <button type="submit" id="send-btn" class="btn-primary">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="container section-padding">
+        <div class="glass-card contact-card">
+            <div class="contact-info">
+                <h2>تواصل مع المطور</h2>
+                <p>للاستفسارات التقنية، التعاون في المشاريع، أو تقديم الملاحظات حول المنصة.</p>
+                
+                <div class="dev-details">
+                    <div class="detail-item">
+                        <span class="label">الاسم:</span>
+                        <span class="value">يوسف حسام</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">البريد الإلكتروني:</span>
+                        <span class="value" id="email-text">y3268232@gmail.com</span>
+                        <button id="copy-email" class="btn-copy" title="نسخ البريد">نسخ</button>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="sender-name" placeholder="الاسم بالكامل" required>
+                <input type="text" id="email-subject" placeholder="موضوع الرسالة" required>
+                <textarea id="email-body" rows="4" placeholder="اكتب رسالتك ليوسف حسام..." required></textarea>
+                <button type="submit" class="btn-primary">إرسال عبر البريد الإلكتروني</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة &copy; 2026 | تصميم وتطوير: يوسف حسام</p>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
